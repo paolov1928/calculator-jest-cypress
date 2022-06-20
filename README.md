@@ -1,5 +1,14 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Quick start
+
+Run each of these in a terminal:
+
+$ npm run dev
+$ npm run test --coverage
+$ npm run cy:open-only
+$ npm run lint
+
 ## Getting Started
 
 First, run the development server:
