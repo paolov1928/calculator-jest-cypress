@@ -4,10 +4,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 Run each of these in a terminal:
 
-$ npm run dev
+```$ npm run dev
 $ npm run test --coverage
 $ npm run cy:open-only
 $ npm run lint
+```
 
 ## Getting Started
 
