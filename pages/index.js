@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import styled from 'styled-components';
+import Form from '../components/form/form';
 
 const Header = styled.h1`
   color: blue;
@@ -14,6 +15,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Header data-testid='header'>Hello World</Header>
+      <Form />
     </div>
   );
 }
