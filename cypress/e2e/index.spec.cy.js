@@ -21,12 +21,13 @@ describe('Navigation', () => {
   it('should allow inputs to calculate', () => {
     cy.visit('http://localhost:3000/');
 
-    cy.get('[data-testid=num1]').type('1');
-    cy.get('[data-testid=num2]').type('1');
+    cy.get('[data-testid=num1]').type('Mango');
+    cy.get('[data-testid=num2]').type('14');
+    cy.get('[data-testid=num3]').type('18');
 
     cy.get('[data-testid=add]').click();
 
-    cy.get('[data-testid=result').contains('2')
+    cy.get('[data-testid=fetched').contains('Mango')
   })
 });
 
