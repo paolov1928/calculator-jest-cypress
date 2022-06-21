@@ -5,19 +5,23 @@ import Container from './container';
 
 describe('Container', () => {
   let originalFetch;
-  let mockedFetch = jest.fn(() =>
-    Promise.resolve({
-      name: 'Testing something!',
-    })
-  );
+  let mockedFetch = jest.fn(() => {
+    if (true) {
+      return Promise.resolve({
+        name: 'Testing something!',
+      });
+    }
+  });
 
   beforeEach(() => {
     originalFetch = global.fetch;
-    global.fetch = jest.fn(() =>
-      Promise.resolve({
-        json: mockedFetch,
-      })
-    );
+    global.fetch = jest.fn(() => {
+      if (true) {
+        return Promise.resolve({
+          json: mockedFetch,
+        });
+      }
+    });
   });
 
   afterEach(() => {
