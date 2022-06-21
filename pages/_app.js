@@ -1,17 +1,17 @@
-import { createGlobalStyle, ThemeProvider } from "styled-components";
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 body{
   font-family:Arial;
 }
 `;
- 
+
 const theme = {
   colors: {
-    primary: "#fafafa",
+    primary: '#fafafa',
   },
 };
- 
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -22,5 +22,5 @@ function MyApp({ Component, pageProps }) {
     </>
   );
 }
- 
+
 export default MyApp;
