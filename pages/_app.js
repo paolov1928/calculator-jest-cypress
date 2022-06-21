@@ -1,7 +1,26 @@
-import '../styles/globals.css'
+import { createGlobalStyle, ThemeProvider } from "styled-components";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+const GlobalStyle = createGlobalStyle`
+body{
+  font-family:Arial;
 }
-
-export default MyApp
+`;
+ 
+const theme = {
+  colors: {
+    primary: "#fafafa",
+  },
+};
+ 
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <GlobalStyle />
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </>
+  );
+}
+ 
+export default MyApp;
